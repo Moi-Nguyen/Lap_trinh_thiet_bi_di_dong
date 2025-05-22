@@ -35,8 +35,8 @@
   - ✅ `luong@gmail.com` → báo: *Bạn đã nhập email hợp lệ*.
 - Cho phép chuyển sang bài tiếp theo hoặc quay lại.
 
-| Email không hợp lệ | Email hợp lệ |
-|--------------------|--------------|
+|                                     Email không hợp lệ                                    |                  Email hợp lệ                                        |
+|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | ![image](https://github.com/user-attachments/assets/27f3d057-826f-48ba-9e23-60f089a7b678) | ![image](https://github.com/user-attachments/assets/545de973-3c37-479b-a594-9ff9034dfbcf)
  
 
