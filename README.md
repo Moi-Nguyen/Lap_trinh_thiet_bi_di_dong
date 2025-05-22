@@ -1,10 +1,10 @@
 # 📱 LẬP TRÌNH THIẾT BỊ DI ĐỘNG
 
-> **Ngôn ngữ lập trình**: Kotlin  
-> **Công cụ phát triển**: Android Studio  
-> **Sinh viên**: Nguyễn Đức Lượng – CN2308CLCA  
-> **Môn học**: Lập trình thiết bị di động  
-> **Repo chứa toàn bộ bài tập thực hành theo từng tuần**
+ **Ngôn ngữ lập trình**: Kotlin  
+ **Công cụ phát triển**: Android Studio  
+ **Sinh viên**: Nguyễn Đức Lượng – CN2308CLCA  
+ **Môn học**: Lập trình thiết bị di động  
+ **Repo chứa toàn bộ bài tập thực hành theo từng tuần**
 
 ---
 🛠️ Kỹ năng rèn luyện
