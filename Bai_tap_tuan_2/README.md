@@ -37,9 +37,8 @@
 
 | Email không hợp lệ | Email hợp lệ |
 |--------------------|--------------|
-| ![image](https://github.com/user-attachments/assets/27f3d057-826f-48ba-9e23-60f089a7b678)
- | ![image](https://github.com/user-attachments/assets/545de973-3c37-479b-a594-9ff9034dfbcf)
- |
+| ![image](https://github.com/user-attachments/assets/27f3d057-826f-48ba-9e23-60f089a7b678) | ![image](https://github.com/user-attachments/assets/545de973-3c37-479b-a594-9ff9034dfbcf)
+ 
 
 ---
 
