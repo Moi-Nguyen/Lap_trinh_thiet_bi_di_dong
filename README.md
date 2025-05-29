@@ -9,10 +9,10 @@
 ---
 🛠️ Kỹ năng rèn luyện
 Kỹ năng	Nội dung
-💡 UI Design	Tổ chức layout với XML, sử dụng Material
-🧠 Logic xử lý dữ liệu	Dùng if/else, Regex, xử lý tuổi
-🧭 Điều hướng màn hình	Sử dụng Intent, startActivity()
-🔄 Giao tiếp người dùng	Hiển thị thông báo, xác nhận, báo lỗi
+💡 UI Design	JetPack Compose, sử dụng Material
+🧠 Logic xử lý dữ liệu
+🧭 Điều hướng màn hình
+🔄 Giao tiếp người dùng
 
 📦 Công nghệ sử dụng
 Ngôn ngữ chính: Kotlin
@@ -21,7 +21,7 @@ IDE: Android Studio
 
 SDK: Android SDK 33+
 
-UI Toolkit: Android View System (XML)
+UI Toolkit: Android View System (XML), Jetpack Compose,...
 ✍️ Thông tin sinh viên
 Họ tên: Nguyễn Đức Lượng
 
