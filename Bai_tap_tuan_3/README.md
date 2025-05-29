@@ -20,7 +20,8 @@
 
 Màn hình mở đầu giới thiệu ứng dụng, thông tin tác giả và mô tả nhanh về Jetpack Compose.
 
-![Start Screen](images/start_screen.png)
+![image](https://github.com/user-attachments/assets/6d4e7ef7-73a8-4765-ba0b-75518e569d70)
+
 
 ---
 
@@ -33,7 +34,8 @@ Danh sách các thành phần UI chính bao gồm:
 
 Mỗi item dẫn đến màn hình chi tiết tương ứng.
 
-![UI Components List](images/ui_components_list.png)
+![image](https://github.com/user-attachments/assets/0799eb82-cbc7-43c5-a8c8-9dc502e4911d)
+
 
 ---
 
@@ -41,7 +43,8 @@ Mỗi item dẫn đến màn hình chi tiết tương ứng.
 
 Hiển thị văn bản mẫu với các hiệu ứng: gạch ngang, chữ in đậm, chữ nghiêng, màu sắc khác nhau.
 
-![Text Detail](images/text_detail.png)
+![image](https://github.com/user-attachments/assets/52fbcea7-e195-4601-8160-7df60e44a104)
+
 
 ---
 
@@ -49,7 +52,8 @@ Hiển thị văn bản mẫu với các hiệu ứng: gạch ngang, chữ in đ
 
 Demo hiển thị hình ảnh với caption, trình bày layout và style.
 
-![Image Detail](images/image_detail.png)
+![image](https://github.com/user-attachments/assets/876dc96b-4aff-4063-9031-10d35dfce0a3)
+
 
 ---
 
@@ -57,7 +61,7 @@ Demo hiển thị hình ảnh với caption, trình bày layout và style.
 
 Trường nhập liệu cho phép người dùng nhập văn bản, có placeholder, bo góc, và dòng chữ đỏ tự động cập nhật nội dung nhập.
 
-![TextField Screen](images/text_field_screen.png)
+![image](https://github.com/user-attachments/assets/575554e4-958c-4cfd-b618-6e4537d3aa8a)
 
 ---
 
@@ -65,7 +69,7 @@ Trường nhập liệu cho phép người dùng nhập văn bản, có placehol
 
 Hiển thị 3 khối chữ nhật bo góc, màu xanh nhạt và xanh đậm, xếp theo chiều dọc trong một khung nền bo góc.
 
-![Column Layout](images/column_layout.png)
+![image](https://github.com/user-attachments/assets/1a484cb4-073c-49e5-a5aa-05db37b97a71)
 
 ---
 
@@ -73,7 +77,7 @@ Hiển thị 3 khối chữ nhật bo góc, màu xanh nhạt và xanh đậm, x�
 
 4 hàng, mỗi hàng 3 ô chữ nhật bo góc, ô giữa màu xanh đậm, 2 ô 2 bên màu xanh nhạt, có nền khung bo góc.
 
-![Row Layout](images/row_layout.png)
+![image](https://github.com/user-attachments/assets/d498f36e-5cce-4971-8911-115233884af0)
 
 ---
 
