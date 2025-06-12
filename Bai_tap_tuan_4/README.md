@@ -1,7 +1,7 @@
-📱 Bài Tập Tuần 4 – Lập Trình Thiết Bị Di Động
+  📱 Bài Tập Tuần 4 – Lập Trình Thiết Bị Di Động
 Đây là ba bài tập nhỏ được thực hiện trong tuần 4 của môn học Lập trình thiết bị di động. Các bài tập được xây dựng bằng Kotlin trên Android Studio, chủ yếu nhằm luyện tập các kỹ năng cơ bản về điều hướng, thiết kế giao diện, và xử lý tương tác trong ứng dụng Android.
 
-📂 Danh sách bài tập
+  📂 Danh sách bài tập
 1. 🔐 nav_OTP – Mô phỏng luồng Quên Mật Khẩu
 Mục tiêu:
 Tạo luồng giao diện nhiều màn hình cho chức năng "Quên mật khẩu", sử dụng Navigation Component.
