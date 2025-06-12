@@ -1,13 +1,17 @@
-  📱 Bài Tập Tuần 4 – Lập Trình Thiết Bị Di Động
-Đây là ba bài tập nhỏ được thực hiện trong tuần 4 của môn học Lập trình thiết bị di động. Các bài tập được xây dựng bằng Kotlin trên Android Studio, chủ yếu nhằm luyện tập các kỹ năng cơ bản về điều hướng, thiết kế giao diện, và xử lý tương tác trong ứng dụng Android.
+📱 Bài Tập Tuần 4 – Lập Trình Thiết Bị Di Động
+Đây là các bài tập nhỏ được thực hiện trong tuần 4 của môn học Lập trình thiết bị di động. Các bài tập được xây dựng bằng Kotlin trên Android Studio, chủ yếu nhằm luyện tập các kỹ năng cơ bản về:
 
-  📂 Danh sách bài tập
+Điều hướng giữa các màn hình
+
+Thiết kế giao diện người dùng
+
+Xử lý tương tác trong ứng dụng Android
+
+📂 Danh sách bài tập
 1. 🔐 nav_OTP – Mô phỏng luồng Quên Mật Khẩu
-Mục tiêu:
-Tạo luồng giao diện nhiều màn hình cho chức năng "Quên mật khẩu", sử dụng Navigation Component.
+Mục tiêu: Tạo luồng giao diện nhiều màn hình cho chức năng "Quên mật khẩu", sử dụng Navigation Component.
 
-Các bước thực hiện:
-
+🔄 Luồng giao diện:
 Nhập email để nhận mã OTP
 
 Nhập mã xác nhận
@@ -16,26 +20,34 @@ Tạo mật khẩu mới
 
 Màn hình xác nhận hoàn tất
 
-Ghi chú: Giao diện đơn giản, tập trung vào điều hướng và nhập liệu cơ bản.
+⚠️ Giao diện đơn giản, tập trung vào điều hướng và nhập liệu cơ bản.
 
 2. 🚀 Thuc_hanh_4 – Splash Screen & Giới thiệu ứng dụng
-Mục tiêu:
-Thiết kế chuỗi giao diện mở đầu ứng dụng với Splash Screen và các màn hình giới thiệu (Onboarding) kết hợp OOP ( hướng đối tượng ).
+Mục tiêu: Thiết kế chuỗi giao diện mở đầu ứng dụng bao gồm:
 
-Nội dung:
+Splash Screen
 
+Các màn hình giới thiệu (Onboarding)
+
+Kết hợp với hướng tiếp cận OOP (hướng đối tượng)
+
+📄 Nội dung:
 Hiển thị logo khi khởi động
 
-Ba màn hình giới thiệu tính năng: quản lý thời gian, tăng hiệu suất, nhắc nhở thông minh
+3 màn hình giới thiệu:
 
-Có nút điều hướng qua từng trang
+Quản lý thời gian
+
+Tăng hiệu suất
+
+Nhắc nhở thông minh
+
+Các nút điều hướng qua từng trang
 
 3. 📚 he_thong_quan_ly_thu_vien – Quản lý mượn sách
-Mục tiêu:
-Xây dựng giao diện đơn giản cho hệ thống quản lý việc mượn sách theo từng sinh viên.
+Mục tiêu: Xây dựng giao diện đơn giản cho hệ thống quản lý việc mượn sách theo từng sinh viên.
 
-Tính năng chính:
-
+🛠 Tính năng chính:
 Chọn sinh viên từ danh sách
 
 Hiển thị và thêm/xóa danh sách sách đã mượn
@@ -43,10 +55,10 @@ Hiển thị và thêm/xóa danh sách sách đã mượn
 Có thanh điều hướng dưới giúp chuyển tab
 
 ⚙️ Công cụ sử dụng
-Android Studio
+🧱 Android Studio
 
-Ngôn ngữ Kotlin
+💻 Ngôn ngữ: Kotlin
 
-Navigation Component
+🧭 Navigation Component
 
-View Layouts cơ bản (LinearLayout, ConstraintLayout)
+📐 Giao diện: View Layouts cơ bản (LinearLayout, ConstraintLayout)
