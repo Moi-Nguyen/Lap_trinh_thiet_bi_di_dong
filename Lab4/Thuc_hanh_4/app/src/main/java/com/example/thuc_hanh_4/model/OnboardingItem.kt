@@ -1,4 +1,4 @@
-package com.example.thuc_hanh_4
+package com.example.thuc_hanh_4.model
 
 data class OnboardingItem(
     val imageResId: Int,

@@ -1,4 +1,4 @@
-package com.example.thuc_hanh_4
+package com.example.thuc_hanh_4.view.onboarding
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -12,32 +12,36 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.*
+import com.example.thuc_hanh_4.R
+import com.example.thuc_hanh_4.model.OnboardingItem
 import com.google.accompanist.pager.*
 import kotlinx.coroutines.launch
+import com.example.thuc_hanh_4.viewmodel.OnboardingViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.compose.runtime.collectAsState
 
 @OptIn(ExperimentalPagerApi::class)
 @Composable
-fun OnboardingPagerScreen(onDone: () -> Unit) {
+fun OnboardingPagerScreen(
+    viewModel: OnboardingViewModel = viewModel(),
+    onDone: () -> Unit
+) {
     val pages = listOf(
-        OnboardingItem(
-            R.drawable.task_management,
-            "Easy Time Management",
-            "With management based on priority and daily tasks..."
-        ),
-        OnboardingItem(
-            R.drawable.increase_efficiency,
-            "Increase Work Effectiveness",
-            "Time management and determining priorities helps you..."
-        ),
-        OnboardingItem(
-            R.drawable.reminder_notification,
-            "Reminder Notification",
-            "Provides reminders so you don’t forget your tasks."
-        )
+        // Có thể tách ra file riêng nếu dài
+        OnboardingItem(R.drawable.task_management, "Easy Time Management", "..."),
+        OnboardingItem(R.drawable.increase_efficiency, "Increase Work Effectiveness", "..."),
+        OnboardingItem(R.drawable.reminder_notification, "Reminder Notification", "...")
     )
 
     val pagerState = rememberPagerState()
     val coroutineScope = rememberCoroutineScope()
+
+    // Cập nhật page vào ViewModel
+    LaunchedEffect(pagerState.currentPage) {
+        viewModel.setPage(pagerState.currentPage)
+    }
+
+    val currentPage by viewModel.currentPage.collectAsState()
 
     Column(
         modifier = Modifier
@@ -45,15 +49,15 @@ fun OnboardingPagerScreen(onDone: () -> Unit) {
             .padding(24.dp),
         verticalArrangement = Arrangement.SpaceBetween
     ) {
-        // Header: Dots + Skip trên cùng 1 hàng
+        // Header: Dots + Skip
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            DotsIndicator(totalDots = pages.size, selectedIndex = pagerState.currentPage)
+            DotsIndicator(totalDots = pages.size, selectedIndex = currentPage)
 
-            if (pagerState.currentPage != pages.lastIndex) {
+            if (currentPage != pages.lastIndex) {
                 Text(
                     text = "Skip",
                     color = Color(0xFF006EE9),
@@ -63,7 +67,7 @@ fun OnboardingPagerScreen(onDone: () -> Unit) {
                         .padding(8.dp)
                 )
             } else {
-                Spacer(modifier = Modifier.width(48.dp)) // giữ layout cân bằng
+                Spacer(modifier = Modifier.width(48.dp))
             }
         }
 
@@ -100,14 +104,14 @@ fun OnboardingPagerScreen(onDone: () -> Unit) {
             }
         }
 
-        // Footer: Nút Next / Get Started
+        // Footer
         Button(
             onClick = {
-                if (pagerState.currentPage == pages.lastIndex) {
+                if (currentPage == pages.lastIndex) {
                     onDone()
                 } else {
                     coroutineScope.launch {
-                        pagerState.animateScrollToPage(pagerState.currentPage + 1)
+                        pagerState.animateScrollToPage(currentPage + 1)
                     }
                 }
             },
@@ -118,10 +122,11 @@ fun OnboardingPagerScreen(onDone: () -> Unit) {
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF006EE9))
         ) {
             Text(
-                text = if (pagerState.currentPage == pages.lastIndex) "Get Started" else "Next",
+                text = if (currentPage == pages.lastIndex) "Get Started" else "Next",
                 color = Color.White,
                 fontSize = 20.sp
             )
         }
     }
 }
+

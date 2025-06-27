@@ -59,9 +59,15 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
+    // Material Icons Extended (📌 THÊM DÒNG NÀY)
+    implementation("androidx.compose.material:material-icons-extended")
+
     // Accompanist Pager for Onboarding slides
     implementation("com.google.accompanist:accompanist-pager:0.34.0")
     implementation("com.google.accompanist:accompanist-pager-indicators:0.34.0")
+
+    // ViewModel for Compose
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
 
     // Test
     testImplementation(libs.junit)

@@ -1,4 +1,4 @@
-package com.example.thuc_hanh_4
+package com.example.thuc_hanh_4.view.splash
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -14,6 +14,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.thuc_hanh_4.R
+import com.example.thuc_hanh_4.ui.theme.Righteous
 import kotlinx.coroutines.delay
 
 val righteousFontFamily = FontFamily(
@@ -21,9 +23,9 @@ val righteousFontFamily = FontFamily(
 )
 
 @Composable
-fun SplashScreen(onTimeout: () -> Unit) {
-    LaunchedEffect(key1 = true) {
-        delay(3000L)  // Đợi 4 giây
+fun SplashScreen(onTimeout: () -> Unit, delayMillis: Long = 3000L) {
+    LaunchedEffect(Unit) {
+        delay(delayMillis)
         onTimeout()
     }
 
@@ -36,7 +38,7 @@ fun SplashScreen(onTimeout: () -> Unit) {
     ) {
         Image(
             painter = painterResource(id = R.drawable.uth_logo),
-            contentDescription = "UTH Logo",
+            contentDescription = null, // nếu không cần screen reader
             modifier = Modifier.size(width = 150.dp, height = 120.dp)
         )
         Spacer(modifier = Modifier.height(24.dp))
@@ -44,9 +46,10 @@ fun SplashScreen(onTimeout: () -> Unit) {
             text = "UTH SmartTasks",
             fontSize = 30.sp,
             fontWeight = FontWeight.Normal,
-            fontFamily = righteousFontFamily,
+            fontFamily = Righteous, // nếu đã đưa vào theme
             color = Color(0xFF006EE9),
             textAlign = TextAlign.Center
         )
     }
 }
+

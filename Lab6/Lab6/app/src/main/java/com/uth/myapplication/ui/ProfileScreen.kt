@@ -46,18 +46,8 @@ fun ProfileScreen(
                 modifier = Modifier.fillMaxWidth(),
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Button(
-                    onClick = onBack,
-                    shape = CircleShape,
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE3F0FB)),
-                    modifier = Modifier.size(48.dp).padding(start = 16.dp)
-                ) {
-                    Icon(
-                        painter = painterResource(id = R.drawable.ic_back),
-                        contentDescription = "Back",
-                        tint = Color(0xFF4285F4)
-                    )
-                }
+
+
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
                     text = "Profile",
@@ -86,18 +76,9 @@ fun ProfileScreen(
                             .clip(CircleShape)
                     )
                 }
-                Button(
-                    onClick = {},
-                    shape = CircleShape,
-                    colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE3F0FB)),
-                    modifier = Modifier.size(32.dp).offset(x = (-8).dp, y = (-8).dp)
-                ) {
-                    Icon(
-                        painter = painterResource(id = R.drawable.ic_camera),
-                        contentDescription = "Change Photo",
-                        tint = Color(0xFF4285F4)
-                    )
-                }
+
+
+
             }
             Spacer(modifier = Modifier.height(24.dp))
             Column(
